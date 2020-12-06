@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    background-color: #000;;
+}
+
+.main_content {
+    position: relative;
+}
+
+h1, h3 {
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    font-size: 3vw;   
+}
+
+h3 {
+    font-size: 2.5vw;
+    color: #fff;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 3vw;
+}
+
+li a {
+    text-decoration: underline;
+}
+   
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #000;
+    text-align: center;
+    z-index: 6;
+    transition: top 0.3s;
+}
+   
+.navigation a {
+    display: inline-block;
+    margin-right: -4px;  /* inline-block gap fix */
+    color: #fff;
+    padding: 2vw;
+    text-decoration: none;
+    z-index: 2;
+}
+   
+.navigation a:hover {
+    background-color: darkgray;
+    color: #000;
+}
+   
+.navigation .icon {
+    display: none;
+}
+   
+.intro {
+    position: absolute;
+    top: 40vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 40vw;
+    width: 80vw;
+    z-index: 2;
+}
+
+.about {
+    position: absolute;
+    top: 13vw;
+    width: 100%;
+    font-size: 1.3vw;
+}
+
+.year {
+    position: absolute;
+    bottom: 6vw;
+    left: 9vw;
+} 
+
+.historicEvents {
+    position: absolute;
+    top: 309vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 503vw;
+    width: 60vw;
+    border-left: 2px solid #fff;
+    z-index: 2;
+}
+
+.historyResults {
+    margin: 14vw auto;
+    padding: 1.5vw 2vw;
+    width: 50vw;
+    line-height: 3vw;
+    position: relative;
+}
+
+.historyResults:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6.8vw;
+    left: -5.6vw;
+    width: 1vw;
+    height: 1vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.p_results {
+    color: #fff;
+    line-height: 1.6vw;
+    padding: 1.5vw 0;
+}
+
+#read_article {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1vw;
+}
+
+div.darken_images {
+    opacity: 0.6; 
+    background: #000; 
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+    top: 0vw; 
+    left: 0vw; 
+    position: fixed; 
+}
+
+#img_1 {
+    width: 100vw;
+    position: absolute;
+}
+
+#img_2 {
+    width: 100vw;
+    position: absolute;
+    top: 66.5vw;
+}
+
+#img_3 {
+    width: 100vw;
+    position: absolute;
+    top: 133vw;
+}
+
+#img_4 {
+    width: 100vw;
+    position: absolute;
+    top: 199vw;
+}
+
+#img_5 {
+    width: 100vw;
+    position: absolute;
+    top: 265vw;
+}
+
+#img_6 {
+    width: 100vw;
+    position: absolute;
+    top: 331vw;
+}
+
+#img_7 {
+    width: 100vw;
+    position: absolute;
+    top: 397vw;
+}
+
+#img_8 {
+    width: 100vw;
+    position: absolute;
+    top: 450vw;
+}
+
+#img_9 {
+    width: 100vw;
+    position: absolute;
+    top: 513vw;
+}
+
+#img_10 {
+    width: 100vw;
+    position: absolute;
+    top: 576vw;
+    display: none;
+}
+
+#img_11 {
+    width: 100vw;
+    position: absolute;
+    top: 705vw;
+    display: none;
+}
+
+#img_12 {
+    width: 100vw;
+    position: absolute;
+    top: 770vw;
+    display: none;
+}
+
+#img_13 {
+    width: 100vw;
+    position: absolute;
+    top: 835vw;
+    display: none;
+}
+
+form {
+    position: absolute;
+    top: 50vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    padding: 2vw;
+    width: 40vw;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+input {
+    width: 100%;
+    margin-top: 2vw;
+    padding: 1vw;
+}
+
+button {
+    border: 1px solid #fff;
+    color: #fff;
+    width: 10vw;
+    padding: 1vw;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 2vw;
+}
+
+.form-error {
+    display: none;
+}
+
+footer {
+    color: #cccccc;
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    left: 0vw;
+    background-color: #000;
+    height: 2vw;
+    width: 100vw;
+    padding: 1.5vw 0;
+    text-align: center;
+}
+
+
+   @media screen and (max-width: 1024px) {
+    .navigation a {display: none;}
+    .navigation a.icon {
+      float: right;
+      display: block;
+      width: 60px;
+    }
+  
+    .navigation.responsive {position: relative; top: 7vw;}
+    .navigation.responsive .icon {
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+      font-size: 2vw;
+    }
+
+    h1 {
+        font-size: 5vw;  
+    }
+    
+    h3 {
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+    
+    p {
+        font-size: 2.7vw;
+    }
+    
+    a {
+        font-size: 2.7vw;
+    }
+
+    li {
+        line-height: 7vw;
+    }
+
+    li a {
+        font-size: 2.7vw;
+    }
+
+    .intro {
+        left: 50vw;
+    }
+    
+    .about {
+        font-size: 2.7vw;
+        top: 18vw;
+    }
+    
+    .year {
+        left: -1.5vw;
+    } 
+    
+    .historicEvents {
+        left: 50vw;
+        top: 450vw;
+        height: 780vw;
+        width: 80vw;
+    }
+    
+    .historyResults {
+        width: 50vw;
+        line-height: 5vw;
+    }
+    
+    .historyResults:before {
+        top: 6.8vw;
+        left: -15.6vw;
+        width: 1vw;
+    }
+    
+    .p_results {
+        line-height: 3vw;
+        padding: 1.5vw 0;
+    }
+    
+    #read_article {
+        font-size: 2.7vw;
+    }
+
+    #img_10 {
+        display: inline-block;
+    }
+
+    #img_11 {
+        display: inline-block;
+    }
+
+    #img_12 {
+        display: inline-block;
+    }
+
+    #img_13 {
+        display: inline-block;
+    }
+
+    form {
+        top: 60vw;
+        width: 60vw;
+    }
+    
+    button {
+        width: 15vw;
+    }
+  
+  }
+
+  @media screen and (max-width: 670px) {
+
+    .navigation.responsive a {
+        font-size: 3.5vw;
+      }
+
+    .about {
+        font-size: 3.2vw;
+        width: 50vw;
+        top: 18vw;
+        left: 15vw;
+    }
+
+    .year {
+        left: -7vw;
+    }
+
+    .historicEvents {
+        width: 90vw;
+    }
+
+    .historyResults {
+        width: 80vw;
+        line-height: 5vw;
+    }
+
+    .historyResults:before {
+        left: -6vw;
+    }
+
+    .p_results {
+        line-height: 4.5vw;
+        font-size: 4vw;
+    }
+
+    #read_article {
+        font-size: 3.7vw;
+    }
+
+  }
+
+ 
+    
+    
